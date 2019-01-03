@@ -214,7 +214,7 @@ def get_example_params(example_index):
     # Process image
     prep_img = preprocess_image(original_image)
     # Define model
-    pretrained_model = models.alexnet(pretrained=True)
+    pretrained_model = models.vgg16_bn(pretrained=True)
     return (original_image,
             prep_img,
             target_class,
